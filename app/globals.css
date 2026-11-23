@@ -201,7 +201,7 @@ h1 {
   white-space: nowrap;
 }
 
-.hero-glass {
+.hero-blueprint {
   grid-area: 1 / 2;
   align-self: center;
   justify-self: center;
@@ -209,11 +209,13 @@ h1 {
   margin: 24px 0;
 }
 
-.hero-glass img {
+.hero-blueprint img {
   display: block;
   width: 100%;
   height: auto;
-  mask-image: radial-gradient(ellipse closest-side, black 82%, transparent 141%);
+  mask-image: linear-gradient(to right, transparent, black 2%, black 98%, transparent),
+    linear-gradient(to bottom, transparent, black 2%, black 98%, transparent);
+  mask-composite: intersect;
 }
 
 .coverage {
@@ -266,7 +268,7 @@ dialog .primary-cta { margin-top: 8px; }
   .hero-copy { grid-area: auto; padding-block: 14px 40px; }
   h1 { font-size: clamp(49px, 11vw, 91px); }
   .intro { max-width: 47ch; }
-  .hero-glass { grid-area: auto; width: min(90%, 440px); justify-self: center; margin: 14px 0 0; }
+  .hero-blueprint { grid-area: auto; width: min(100%, 610px); justify-self: center; margin: 30px 0 4px; }
   .coverage { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
@@ -281,7 +283,7 @@ dialog .primary-cta { margin-top: 8px; }
 
 @media (max-width: 480px) {
   .hero-copy { padding-top: 13px; }
-  .hero-glass { width: 77%; margin-top: 10px; }
+  .hero-blueprint { margin-top: 23px; }
   h1 { font-size: clamp(40px, 12vw, 56px); }
   .intro { margin-top: 20px; }
   .hero-action { margin-top: 23px; }
