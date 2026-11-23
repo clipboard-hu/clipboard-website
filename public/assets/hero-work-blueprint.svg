@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="585" viewBox="0 14 920 585">
+  <defs>
+    <style>
+      .ink { fill: #1945a0 }
+      .rule { fill: none; stroke: #1945a0; stroke-width: 1.6; stroke-linejoin: round }
+      .guide { fill: none; stroke: #5779ae; stroke-width: 1; opacity: .65 }
+      .label { fill: #1945a0; font: 700 12px system-ui, sans-serif }
+      .caption { fill: #1945a0; font: 500 10px system-ui, sans-serif }
+      .code { fill: #1945a0; font: 600 13px ui-monospace, monospace }
+    </style>
+    <pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(38)">
+      <path d="M0 0v7" stroke="#1945a0" stroke-width="1" opacity=".28"/>
+    </pattern>
+    <path id="mark" d="M0 29 47 0 37 27l29-5-41 38 7-25z"/>
+  </defs>
+
+  <!-- Construction marks are aligned with the folds. -->
+  <g class="guide">
+    <path d="M31 126 221 62M195 57l142 89M316 142l171-39M465 98l144 111M586 205l151-39M712 166l180 90"/>
+    <path d="M209 50l-27 315m148-237-31 311m177-344-28 313m154-220-31 314m153-348-28 316"/>
+    <path d="M16 107v20m-10-10h20m869 444v20m-10-10h20"/>
+  </g>
+
+  <g stroke="#1945a0" stroke-width="2" stroke-linejoin="round">
+    <path d="M43 122 207 67 182 350 18 405Z" fill="#f2f5f9"/>
+    <path d="M207 67 327 139 302 422 182 350Z" fill="#e2eaf6"/>
+    <path d="M327 139 474 106 449 389 302 422Z" fill="#f7f8f6"/>
+    <path d="M474 106 598 202 573 485 449 389Z" fill="#e9eff7"/>
+    <path d="M598 202 722 170 697 453 573 485Z" fill="#f7f8f6"/>
+    <path d="M722 170 879 249 854 532 697 453Z" fill="#e8eef7"/>
+  </g>
+
+  <!-- Development -->
+  <g transform="matrix(1 -.33537 -.08834 1 43 122)">
+    <path d="M18 36h128v177H18z" fill="#edf3fb" class="rule"/>
+    <path d="M18 60h128M37 61v151" class="guide"/>
+    <text x="27" y="52" class="caption">quote.ts</text>
+    <g class="caption" opacity=".8">
+      <text x="25" y="86">1</text><text x="25" y="107">2</text><text x="25" y="128">3</text>
+      <text x="25" y="149">4</text><text x="25" y="170">5</text>
+    </g>
+    <g class="code" xml:space="preserve">
+      <text x="43" y="86">const quote</text>
+      <text x="43" y="107">  = {</text>
+      <text x="43" y="128">    qty: 24,</text>
+      <text x="43" y="149">    size: "M"</text>
+      <text x="43" y="170">  };</text>
+    </g>
+  </g>
+
+  <!-- Website wireframe -->
+  <g transform="matrix(1 .6 -.08834 1 207 67)">
+    <rect x="14" y="42" width="92" height="163" rx="3" fill="#f9faf8" class="rule"/>
+    <path d="M14 62h92M25 73h26m21 0h9m5 0h9" class="rule"/>
+    <g class="ink">
+      <circle cx="24" cy="52" r="1.8"/><circle cx="31" cy="52" r="1.8"/><circle cx="38" cy="52" r="1.8"/>
+    </g>
+    <path d="M25 86h70v59H25z" fill="url(#hatch)" class="rule"/>
+    <path d="M25 145l27-36 16 18 12-14 15 32" class="rule"/>
+    <circle cx="79" cy="100" r="5" class="rule"/>
+    <path d="M25 157h30v21H25zm40 0h30v21H65zM25 186h30m10 0h30" class="guide"/>
+  </g>
+
+  <!-- Marketing analytics, illustrative counts -->
+  <g transform="matrix(1 -.22449 -.08834 1 327 139)">
+    <text x="16" y="53" class="label">Forgalom</text>
+    <text x="16" y="71" class="caption">Napi látogatások</text>
+    <path d="M34 91v105h98M34 101h98m-98 31h98m-98 32h98" class="guide"/>
+    <g class="caption">
+      <text x="15" y="105">60</text><text x="15" y="136">40</text><text x="15" y="168">20</text>
+      <text x="46" y="212">H</text><text x="66" y="212">K</text><text x="82" y="212">Sz</text><text x="106" y="212">Cs</text>
+    </g>
+    <path d="M44 160h11v36H44zm21-14h11v50H65zm21 5h11v45H86zm21-28h11v73h-11z" fill="#6387c1"/>
+    <path d="m49 154 21-15 21 7 21-30" class="rule"/>
+  </g>
+
+  <!-- Social creative: avatar, color, image crops -->
+  <g transform="matrix(1 .77419 -.08834 1 474 106)">
+    <text x="16" y="53" class="label">Kreatív</text>
+    <circle cx="61" cy="104" r="37" fill="#1945a0"/>
+    <use href="#mark" fill="#f6f7f3" transform="translate(36 80) scale(.75)"/>
+    <path d="M17 152h90m-90 42h90M17 147v11m90-11v11M17 188v11m90-11v11" class="guide"/>
+    <path d="M25 162h22v24H25z" fill="#1945a0"/>
+    <path d="M51 162h22v24H51z" fill="#a8bee0"/>
+    <path d="M77 162h22v24H77z" fill="#f6f7f3" class="rule"/>
+  </g>
+
+  <!-- Ad creative -->
+  <g transform="matrix(1 -.25806 -.08834 1 598 202)">
+    <path d="M15 36h94v175H15z" fill="#f8f9f7" class="rule"/>
+    <text x="25" y="54" class="caption">Hirdetés</text>
+    <path d="M25 64h74v58H25z" fill="#1945a0"/>
+    <use href="#mark" fill="#f6f7f3" transform="translate(41 74) scale(.63)"/>
+    <text x="25" y="144" class="label">Új kollekció</text>
+    <path d="M25 153h63m-63 8h48" class="guide"/>
+    <path d="M25 176h74v20H25z" fill="#e3ebf8" class="rule"/>
+    <text x="31" y="190" class="caption">Megnézem</text>
+    <path d="M87 188v-5h5m-5 5 5-5" class="rule"/>
+  </g>
+
+  <!-- AI workflow -->
+  <g transform="matrix(1 .50318 -.08834 1 722 170)">
+    <path d="M20 40h116v63H20z" fill="#f7f8f6" class="rule"/>
+    <text x="29" y="60" class="label">Beérkező kérés</text>
+    <text x="29" y="78" class="caption">„24 darabot kérnék</text>
+    <text x="29" y="92" class="caption">M-es méretben.”</text>
+    <path d="M78 104v23m-5-5 5 5 5-5" class="rule"/>
+    <path d="M20 130h116v71H20z" fill="#d9e5f6" class="rule"/>
+    <text x="29" y="151" class="label">AI-kivonat</text>
+    <path d="M29 159h97m-97 21h97" class="guide"/>
+    <text x="29" y="174" class="caption">Mennyiség</text>
+    <text x="107" y="174" class="caption">24</text>
+    <text x="29" y="195" class="caption">Méret</text>
+    <text x="107" y="195" class="caption">M</text>
+  </g>
+
+  <path d="M23 352C77 344 126 302 186 305L306 374C351 361 410 332 453 344L577 439C615 436 666 408 701 410L858 491"
+    fill="none" stroke="#ed4b2b" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

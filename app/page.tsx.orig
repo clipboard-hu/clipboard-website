@@ -1,0 +1,85 @@
+import { ConsultationButton } from "./consultation-button";
+import { HeroBlueprint } from "./hero-blueprint";
+import { HomeSections } from "./home-sections";
+import { MarketingAudit } from "./marketing-audit";
+import { ServicesBlueprint } from "./services-blueprint";
+import { SiteFooter } from "./site-footer";
+
+const services = [
+  "AI-tanácsadás és fejlesztés",
+  "Weboldalak és webappok",
+  "iOS- és Android-appok",
+  "Hirdetések, kreatívok, analitika",
+];
+
+export default function Home() {
+  return (
+    <>
+      <header className="topbar frame">
+        <a className="signature" href="#kezdolap" aria-label="Digitális ügynökség – kezdőlap">
+          <svg viewBox="0 0 36 36" width="36" height="36" aria-hidden="true">
+            <rect width="36" height="36" rx="8" fill="currentColor" />
+            <path d="M9 25h6.5a5 5 0 0 0 5-5v-4a5 5 0 0 1 5-5H27M9 18h4m10 0h4" fill="none" stroke="white" strokeWidth="2.3" strokeLinecap="round" />
+          </svg>
+          <span>Digitális ügynökség</span>
+        </a>
+        <nav aria-label="Fő navigáció">
+          <a href="#marketingaudit">Marketing audit</a>
+          <a href="#szakteruletek">Szakterületek</a>
+          <ConsultationButton className="nav-cta">Konzultáció</ConsultationButton>
+        </nav>
+      </header>
+
+      <main className="frame">
+        <section id="kezdolap" className="hero" aria-labelledby="hero-title">
+          <HeroBlueprint />
+          <div className="hero-copy">
+            <h1 id="hero-title">Teljes digitális<br />lefedettség.</h1>
+            <p className="intro">
+              A stratégiától a kampányokig egy csapattal dolgozol. Segítünk bevezetni az AI-t,
+              felépíteni a weboldaladat vagy appodat, és elérni a vevőidet.
+            </p>
+            <div className="hero-action">
+              <ConsultationButton className="primary-cta">
+                Ingyenes konzultáció
+                <svg viewBox="0 0 24 24" width="21" height="21" aria-hidden="true">
+                  <path d="M5 12h13m-5-5 5 5-5 5" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </ConsultationButton>
+              <span className="duration">
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                  <circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" strokeWidth="1.5" />
+                  <path d="M12 7.5V12l2.7 1.7" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                </svg>
+                60 perc
+              </span>
+            </div>
+          </div>
+        </section>
+
+        <ul className="coverage" aria-label="Szakterületek röviden">
+          {services.map((service) => (
+            <li key={service}>
+              <span className="service-dot" aria-hidden="true" />
+              {service}
+            </li>
+          ))}
+        </ul>
+        <MarketingAudit />
+        <ServicesBlueprint />
+        <HomeSections />
+      </main>
+
+      <SiteFooter />
+
+      <dialog id="consultation" aria-labelledby="consultation-title">
+        <form method="dialog">
+          <h2 id="consultation-title">Ingyenes konzultáció</h2>
+          <p>60 perc, hogy átbeszéljük, miben tudunk segíteni.</p>
+          <p className="preview-note">Az időpontfoglalás előkészítés alatt áll.</p>
+          <button className="primary-cta" type="submit" autoFocus>Vissza</button>
+        </form>
+      </dialog>
+    </>
+  );
+}

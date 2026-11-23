@@ -1,0 +1,68 @@
+.masthead {
+  isolation: isolate;
+  overflow: clip;
+  color: #f6f6ff;
+  background: #101029;
+}
+.masthead :global(.topbar) {
+  position: relative;
+  inset: auto;
+  width: var(--frame-width);
+  margin-block: 0;
+  padding: 14px 0;
+  border-bottom: 1px solid #ffffff26;
+}
+.masthead :global(.topbar)::before { display: none; }
+.masthead :global(.signature) { gap: 7px; font-size: 29px; letter-spacing: -.065em; line-height: 1; }
+.masthead :global(.nav-cta) { border: 1px solid #ffffff55; background: transparent; color: inherit; border-radius: 30px; }
+.masthead :global(nav a:hover), .masthead :global(.nav-cta:hover) { background: #ffffff18; }
+.masthead :focus-visible { outline-color: #b7dcff; }
+.hero {
+  isolation: isolate;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  min-height: clamp(550px, 44vw, 740px);
+  padding-block: clamp(58px, 6vw, 100px);
+}
+.hero h1 {
+  font-size: clamp(82px, 8.5vw, 156px);
+  line-height: .91;
+  letter-spacing: -.075em;
+  font-weight: 650;
+  margin-left: -.045em;
+}
+.light {
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  right: calc((100% - 100vw) / 2);
+  top: 3%;
+  width: min(47vw, 840px);
+  height: 97%;
+  background: url('/assets/backlit-refraction.svg') right bottom / 100% 100% no-repeat;
+}
+.light::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: -20% -25% -15% -45%;
+  background: radial-gradient(ellipse at 71% 48%, rgb(97 83 240 / 34%), rgb(61 46 157 / 22%) 34%, transparent 66%);
+}
+.lead { margin-top: clamp(34px, 3vw, 54px); }
+.lead p { max-width: 44ch; margin: 0 0 25px; color: #cdcddd; font-size: clamp(16px, 1.3vw, 21px); line-height: 1.5; }
+.consult { display: inline-flex; gap: 13px; align-items: center; min-height: 48px; padding: 0 18px; border-radius: 32px; color: #171432; background: #eceaff; font-weight: 650; }
+.consult span { padding-left: 12px; border-left: 1px solid #a5a2ba; font-size: .83em; }
+.consult:hover { background: white; }
+@media (max-width: 760px) {
+  .masthead :global(.signature) { width: auto; gap: 4px; font-size: 23px; }
+  .masthead :global(.signature span) { display: inline; }
+  .masthead :global(.signature svg) { width: 22px; height: 30px; }
+  .masthead :global(.nav-cta) { display: none; }
+  .hero { min-height: 545px; justify-content: end; padding: 125px 0 42px; }
+  .hero h1 { font-size: clamp(48px, 10.2vw, 76px); }
+  .light { width: 58vw; height: 178px; top: 0; opacity: .9; }
+  .lead { margin-top: 24px; }
+}

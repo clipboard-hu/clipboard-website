@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 600" preserveAspectRatio="none">
+  <defs>
+    <radialGradient id="halo">
+      <stop stop-color="#b9cdff" stop-opacity=".94"/>
+      <stop offset=".22" stop-color="#889cff" stop-opacity=".82"/>
+      <stop offset=".57" stop-color="#6455ff" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#4938d7" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="beam" x1="0" y1="1" x2="1" y2="0">
+      <stop stop-color="#4434cf" stop-opacity="0"/>
+      <stop offset=".36" stop-color="#7969f5" stop-opacity=".55"/>
+      <stop offset=".67" stop-color="#d8edff"/>
+      <stop offset=".8" stop-color="#f3f8ff"/>
+      <stop offset="1" stop-color="#899bff" stop-opacity=".3"/>
+    </linearGradient>
+    <filter id="soft" x="-50%" y="-80%" width="200%" height="260%"><feGaussianBlur stdDeviation="17"/></filter>
+    <filter id="focus" x="-30%" y="-50%" width="160%" height="200%"><feGaussianBlur stdDeviation="4"/></filter>
+    <path id="arc" d="M-70 425 C165 520 292 457 425 341 S603 123 754 108" fill="none" stroke="url(#beam)"/>
+    <g id="refracted">
+      <use href="#arc" stroke-width="85" filter="url(#soft)"/>
+      <use href="#arc" stroke-width="21" filter="url(#focus)"/>
+    </g>
+    <linearGradient id="edge"><stop stop-color="#b1bcff" stop-opacity=".24"/><stop offset=".18" stop-color="#95aeff" stop-opacity=".03"/><stop offset=".79" stop-color="#19144d" stop-opacity=".02"/><stop offset="1" stop-color="#18163f" stop-opacity=".32"/></linearGradient>
+    <radialGradient id="window"><stop offset=".22" stop-color="white"/><stop offset="1" stop-color="black"/></radialGradient>
+    <mask id="pane"><ellipse cx="523" cy="259" rx="310" ry="265" fill="url(#window)"/></mask>
+  </defs>
+  <ellipse cx="535" cy="266" rx="365" ry="274" fill="url(#halo)"/>
+  <use href="#arc" stroke-width="67" filter="url(#soft)" opacity=".62"/>
+  <g mask="url(#pane)">
+    <svg x="182" width="19" height="600" viewBox="182 0 19 600" overflow="hidden"><g transform="translate(0 26) skewY(-2)"><use href="#refracted"/></g><svg x="194" width="7" height="600" viewBox="194 0 7 600" overflow="hidden"><use href="#refracted" transform="translate(0 -15)"/></svg><rect x="182" width="19" height="600" fill="url(#edge)"/></svg>
+    <svg x="201" width="19" height="600" viewBox="201 0 19 600" overflow="hidden"><g transform="translate(0 26) skewY(-2)"><use href="#refracted"/></g><svg x="213" width="7" height="600" viewBox="213 0 7 600" overflow="hidden"><use href="#refracted" transform="translate(0 -15)"/></svg><rect x="201" width="19" height="600" fill="url(#edge)"/></svg>
+    <svg x="220" width="19" height="600" viewBox="220 0 19 600" overflow="hidden"><g transform="translate(0 26) skewY(-2)"><use href="#refracted"/></g><svg x="232" width="7" height="600" viewBox="232 0 7 600" overflow="hidden"><use href="#refracted" transform="translate(0 -15)"/></svg><rect x="220" width="19" height="600" fill="url(#edge)"/></svg>
+    <svg x="239" width="19" height="600" viewBox="239 0 19 600" overflow="hidden"><g transform="translate(0 26) skewY(-2)"><use href="#refracted"/></g><svg x="251" width="7" height="600" viewBox="251 0 7 600" overflow="hidden"><use href="#refracted" transform="translate(0 -15)"/></svg><rect x="239" width="19" height="600" fill="url(#edge)"/></svg>
+    <svg x="258" width="19" height="600" viewBox="258 0 19 600" overflow="hidden"><g transform="translate(0 26) skewY(-2)"><use href="#refracted"/></g><svg x="270" width="7" height="600" viewBox="270 0 7 600" overflow="hidden"><use href="#refracted" transform="translate(0 -15)"/></svg><rect x="258" width="19" height="600" fill="url(#edge)"/></svg>
+    <svg x="277" width="19" height="600" viewBox="277 0 19 600" overflow="hidden"><g transform="translate(0 26) skewY(-2)"><use href="#refracted"/></g><svg x="289" width="7" height="600" viewBox="289 0 7 600" overflow="hidden"><use href="#refracted" transform="translate(0 -15)"/></svg><rect x="277" width="19" height="600" fill="url(#edge)"/></svg>
+    <svg x="296" width="19" height="600" viewBox="296 0 19 600" overflow="hidden"><g transform="translate(0 26) skewY(-2)"><use href="#refracted"/></g><svg x="308" width="7" height="600" viewBox="308 0 7 600" overflow="hidden"><use href="#refracted" transform="translate(0 -15)"/></svg><rect x="296" width="19" height="600" fill="url(#edge)"/></svg>
+    <svg x="315" width="19" height="600" viewBox="315 0 19 600" overflow="hidden"><g transform="translate(0 26) skewY(-2)"><use href="#refracted"/></g><svg x="327" width="7" height="600" viewBox="327 0 7 600" overflow="hidden"><use href="#refracted" transform="translate(0 -15)"/></svg><rect x="315" width="19" height="600" fill="url(#edge)"/></svg>
+    <svg x="334" width="19" height="600" viewBox="334 0 19 600" overflow="hidden"><g transform="translate(0 26) skewY(-2)"><use href="#refracted"/></g><svg x="346" width="7" height="600" viewBox="346 0 7 600" overflow="hidden"><use href="#refracted" transform="translate(0 -15)"/></svg><rect x="334" width="19" height="600" fill="url(#edge)"/></svg>
+    <svg x="353" width="19" height="600" viewBox="353 0 19 600" overflow="hidden"><g transform="translate(0 26) skewY(-2)"><use href="#refracted"/></g><svg x="365" width="7" height="600" viewBox="365 0 7 600" overflow="hidden"><use href="#refracted" transform="translate(0 -15)"/></svg><rect x="353" width="19" height="600" fill="url(#edge)"/></svg>
+    <svg x="372" width="19" height="600" viewBox="372 0 19 600" overflow="hidden"><g transform="translate(0 26) skewY(-2)"><use href="#refracted"/></g><svg x="384" width="7" height="600" viewBox="384 0 7 600" overflow="hidden"><use href="#refracted" transform="translate(0 -15)"/></svg><rect x="372" width="19" height="600" fill="url(#edge)"/></svg>
+    <svg x="391" width="19" height="600" viewBox="391 0 19 600" overflow="hidden"><g transform="translate(0 26) skewY(-2)"><use href="#refracted"/></g><svg x="403" width="7" height="600" viewBox="403 0 7 600" overflow="hidden"><use href="#refracted" transform="translate(0 -15)"/></svg><rect x="391" width="19" height="600" fill="url(#edge)"/></svg>
+    <svg x="410" width="19" height="600" viewBox="410 0 19 600" overflow="hidden"><g transform="translate(0 26) skewY(-2)"><use href="#refracted"/></g><svg x="422" width="7" height="600" viewBox="422 0 7 600" overflow="hidden"><use href="#refracted" transform="translate(0 -15)"/></svg><rect x="410" width="19" height="600" fill="url(#edge)"/></svg>
+    <svg x="429" width="19" height="600" viewBox="429 0 19 600" overflow="hidden"><g transform="translate(0 26) skewY(-2)"><use href="#refracted"/></g><svg x="441" width="7" height="600" viewBox="441 0 7 600" overflow="hidden"><use href="#refracted" transform="translate(0 -15)"/></svg><rect x="429" width="19" height="600" fill="url(#edge)"/></svg>
+    <svg x="448" width="19" height="600" viewBox="448 0 19 600" overflow="hidden"><g transform="translate(0 26) skewY(-2)"><use href="#refracted"/></g><svg x="460" width="7" height="600" viewBox="460 0 7 600" overflow="hidden"><use href="#refracted" transform="translate(0 -15)"/></svg><rect x="448" width="19" height="600" fill="url(#edge)"/></svg>
+    <svg x="467" width="19" height="600" viewBox="467 0 19 600" overflow="hidden"><g transform="translate(0 26) skewY(-2)"><use href="#refracted"/></g><svg x="479" width="7" height="600" viewBox="479 0 7 600" overflow="hidden"><use href="#refracted" transform="translate(0 -15)"/></svg><rect x="467" width="19" height="600" fill="url(#edge)"/></svg>
+    <svg x="486" width="19" height="600" viewBox="486 0 19 600" overflow="hidden"><g transform="translate(0 26) skewY(-2)"><use href="#refracted"/></g><svg x="498" width="7" height="600" viewBox="498 0 7 600" overflow="hidden"><use href="#refracted" transform="translate(0 -15)"/></svg><rect x="486" width="19" height="600" fill="url(#edge)"/></svg>
+    <svg x="505" width="19" height="600" viewBox="505 0 19 600" overflow="hidden"><g transform="translate(0 26) skewY(-2)"><use href="#refracted"/></g><svg x="517" width="7" height="600" viewBox="517 0 7 600" overflow="hidden"><use href="#refracted" transform="translate(0 -15)"/></svg><rect x="505" width="19" height="600" fill="url(#edge)"/></svg>
+    <svg x="524" width="19" height="600" viewBox="524 0 19 600" overflow="hidden"><g transform="translate(0 26) skewY(-2)"><use href="#refracted"/></g><svg x="536" width="7" height="600" viewBox="536 0 7 600" overflow="hidden"><use href="#refracted" transform="translate(0 -15)"/></svg><rect x="524" width="19" height="600" fill="url(#edge)"/></svg>
+    <svg x="543" width="19" height="600" viewBox="543 0 19 600" overflow="hidden"><g transform="translate(0 26) skewY(-2)"><use href="#refracted"/></g><svg x="555" width="7" height="600" viewBox="555 0 7 600" overflow="hidden"><use href="#refracted" transform="translate(0 -15)"/></svg><rect x="543" width="19" height="600" fill="url(#edge)"/></svg>
+    <svg x="562" width="19" height="600" viewBox="562 0 19 600" overflow="hidden"><g transform="translate(0 26) skewY(-2)"><use href="#refracted"/></g><svg x="574" width="7" height="600" viewBox="574 0 7 600" overflow="hidden"><use href="#refracted" transform="translate(0 -15)"/></svg><rect x="562" width="19" height="600" fill="url(#edge)"/></svg>
+    <svg x="581" width="19" height="600" viewBox="581 0 19 600" overflow="hidden"><g transform="translate(0 26) skewY(-2)"><use href="#refracted"/></g><svg x="593" width="7" height="600" viewBox="593 0 7 600" overflow="hidden"><use href="#refracted" transform="translate(0 -15)"/></svg><rect x="581" width="19" height="600" fill="url(#edge)"/></svg>
+    <svg x="600" width="19" height="600" viewBox="600 0 19 600" overflow="hidden"><g transform="translate(0 26) skewY(-2)"><use href="#refracted"/></g><svg x="612" width="7" height="600" viewBox="612 0 7 600" overflow="hidden"><use href="#refracted" transform="translate(0 -15)"/></svg><rect x="600" width="19" height="600" fill="url(#edge)"/></svg>
+    <svg x="619" width="19" height="600" viewBox="619 0 19 600" overflow="hidden"><g transform="translate(0 26) skewY(-2)"><use href="#refracted"/></g><svg x="631" width="7" height="600" viewBox="631 0 7 600" overflow="hidden"><use href="#refracted" transform="translate(0 -15)"/></svg><rect x="619" width="19" height="600" fill="url(#edge)"/></svg>
+    <svg x="638" width="19" height="600" viewBox="638 0 19 600" overflow="hidden"><g transform="translate(0 26) skewY(-2)"><use href="#refracted"/></g><svg x="650" width="7" height="600" viewBox="650 0 7 600" overflow="hidden"><use href="#refracted" transform="translate(0 -15)"/></svg><rect x="638" width="19" height="600" fill="url(#edge)"/></svg>
+    <svg x="657" width="19" height="600" viewBox="657 0 19 600" overflow="hidden"><g transform="translate(0 26) skewY(-2)"><use href="#refracted"/></g><svg x="669" width="7" height="600" viewBox="669 0 7 600" overflow="hidden"><use href="#refracted" transform="translate(0 -15)"/></svg><rect x="657" width="19" height="600" fill="url(#edge)"/></svg>
+    <svg x="676" width="19" height="600" viewBox="676 0 19 600" overflow="hidden"><g transform="translate(0 26) skewY(-2)"><use href="#refracted"/></g><svg x="688" width="7" height="600" viewBox="688 0 7 600" overflow="hidden"><use href="#refracted" transform="translate(0 -15)"/></svg><rect x="676" width="19" height="600" fill="url(#edge)"/></svg>
+  </g>
+</svg>
