@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ConsultationButton } from "./consultation-button";
 import { ScrollHeader } from "./scroll-header";
 
@@ -7,11 +8,13 @@ export function SiteHeader({ onHomepage = false }: { onHomepage?: boolean }) {
   return (
     <ScrollHeader>
       <a className="signature" href={`${homepage}#kezdolap`} aria-label="Clipboard – kezdőlap">
-        <svg viewBox="0 0 36 40" width="32" height="36" aria-hidden="true">
-          <path d="M9 7H6a3 3 0 0 0-3 3v23a3 3 0 0 0 3 3h15m5-29h2a3 3 0 0 1 3 3v11" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
-          <path d="M11 5h3a4 4 0 0 1 8 0h3v6H11zm8 15 1 15 4-4 4 8 4-2-4-8 7-1z" fill="currentColor"/>
-          <path d="M9 16h12m-12 5h5" stroke="currentColor" strokeWidth="2.4"/>
-        </svg>
+        <Image
+          src="/brand/clipboard-header.png"
+          width={40}
+          height={40}
+          alt=""
+          unoptimized
+        />
         <span>clipboard</span>
       </a>
       <nav aria-label="Fő navigáció">

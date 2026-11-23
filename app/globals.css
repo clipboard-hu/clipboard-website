@@ -100,7 +100,7 @@ a { color: inherit; }
   text-decoration: none;
 }
 
-.signature svg { flex: none; }
+.signature img { display: block; flex: none; border-radius: 6px; }
 
 .topbar nav {
   gap: clamp(4px, .65vw, 10px);
@@ -276,7 +276,7 @@ dialog .primary-cta { margin-top: 8px; }
   .topbar { --island-padding: clamp(12px, 3.6vw, 24px); }
   .signature { justify-content: center; width: 44px; padding: 0; }
   .signature span { display: none; }
-  .signature svg { width: 30px; height: 30px; }
+  .signature img { width: 32px; height: 32px; }
   .topbar nav { font-size: 13px; }
   .nav-cta { margin-inline-start: 0; padding-inline: 9px; }
 }
